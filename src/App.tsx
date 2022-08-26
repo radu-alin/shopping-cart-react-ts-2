@@ -1,12 +1,17 @@
-import { Button } from '@material-ui/core';
+import React from 'react';
+import Container from '@material-ui/core/Container';
+import CssBaseline from '@material-ui/core/CssBaseline';
 
-import './App.css';
+import { Home } from './pages';
 
 const App = () => {
   return (
-    <div className="App">
-      <Button>Hello</Button>
-    </div>
+    <React.Fragment>
+      <CssBaseline />
+      <Container maxWidth="lg">
+        <Home />
+      </Container>
+    </React.Fragment>
   );
 };
 
